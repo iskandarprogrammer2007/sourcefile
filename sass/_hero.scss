@@ -1,0 +1,71 @@
+#hero {
+    background: url(../images/hero-img.png) no-repeat;
+    background-color: #bad8e3;
+    background-size: contain;
+    background-position: right;
+
+}
+
+.hero {
+    padding-top: 150px;
+    &__left {
+        width: 60%;
+        &__title {
+            font-weight: 700;
+            font-size: 70px;
+            line-height: 84px;
+        }
+        &__desc {
+            font-weight: 400;
+            font-size: 21px;
+            line-height: 32px;
+            padding: 24px 0 48px;
+        }
+        &__search {
+            width: 50%;
+            padding: 7px 11px;
+            background-color: #fff;
+            border-radius: 8px;
+            &__input {
+                display: flex;
+                gap: 23px;
+                input {
+                    border: none;
+                    outline: none;
+                }
+            }
+            &__btn {
+                padding: 8px 24px;
+                background-color: #1b213a;
+                color: #fff;
+                border-radius: 8px;
+            }
+        }
+        &__cards {
+            display: flex;
+            gap: 60px;
+            padding-top: 64px;
+            &__card {
+                &__title {
+                    font-weight: 600;
+                    font-size: 50px;
+                    line-height: 32px;
+                    color: #fff;
+                }
+                p {
+                    font-weight: 400;
+                    font-size: 21px;
+                    line-height: 32px;
+                    color: #646464;
+                }
+            }
+        }
+    }
+
+    // &__right {
+    //     width: 40%;
+    //     img{
+    //         width: 100%;
+    //     }
+    // }
+}
