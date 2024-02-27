@@ -1,7 +1,7 @@
 .dark {
-    --primaryColor: white;
-    --secondaryColor: black;
-    --darkModeColor: yellow;
+    $primaryColor: white;
+    $secondaryColor: black;
+    $darkModeColor: yellow;
 }
 
 * {
@@ -45,9 +45,9 @@ button {
     font-size: 25px;
     bottom: 20px;
     right: 20px;
-    background: var(--backgroundColor);
+    background: $backgroundColor;
     border-radius: 50%;
-    color: var(--secondaryColor);
+    color: $secondaryColor;
     display: none;
     justify-content: center;
     align-items: center;
