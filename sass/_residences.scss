@@ -1,0 +1,62 @@
+.residences__cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    padding-top: 120px;
+
+    @media (max-width:950px) {
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
+
+    &__card {
+        width: 30%;
+        transition: 0.3s;
+
+        &:hover {
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+        &__img {
+            width: 100%;
+
+            & img {
+                width: 100%;
+                border-radius: 10px 10px 0 0;
+            }
+        }
+
+        &__info {
+            border: 2px solid rgb(168, 168, 168);
+            border-radius: 0 0 10px 10px;
+
+            &__tittle {
+                width: 80%;
+                padding: 24px 0 5px 24px;
+                font-size: 24px;
+                border: 0 0 2px 2px solid gray;
+            }
+
+            &__money {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                padding: 8px 0 13px 24px;
+            }
+
+            &__time {
+                padding: 0 0 24px 30px;
+                color: gray;
+            }
+        }
+
+        @media (max-width:950px) {
+            width: 70%;
+        }
+
+        @media (max-width:500px) {
+            width: 90%;
+        }
+    }
+}
